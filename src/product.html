@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Act+Acre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/product.css">
+  <script type="module" src="js/product.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="menu">
+      <div id="categories-icon"><svg width="100%" height="100%" version="1.1" viewBox="0 0 10.583 10.583"
+          xmlns="http://www.w3.org/2000/svg">
+          <g id="lines" fill="none" stroke="#000" stroke-linecap="round" stroke-width=".7">
+            <path id="line1" d="M1 1 H 10"></path>
+            <path id="line2" d="M1 5 H 10"></path>
+            <path id="line3" d="M1 9 H 10"></path>
+          </g>
+        </svg></div>
+      <div id="categories">
+        <span class="category">Shop</span>
+        <span class="category">Science</span>
+        <span class="category">Press</span>
+        <span class="category">Blogs</span>
+        <span class="category">Tutorial</span>
+      </div>
+      <div id="search">
+        <svg id="svg1" width="100%" height="100%" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+          sodipodi:docname="searchIcon.svg" version="1.1" viewBox="0 0 15.875 15.875"
+          xmlns="http://www.w3.org/2000/svg">
+          <g id="layer1" fill="none" stroke="#000" stroke-linecap="round" stroke-width=".8" inkscape:groupmode="layer"
+            inkscape:label="Layer 1">
+            <circle id="search1" cx="7.2637" cy="7.2215" r="5.2669" />
+            <path id="search2" d="m10.999 10.957 2.8668 2.8668" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div id="logo">
+      <img src="assets/logo.png" alt="logo">
+    </div>
+    <div id="user">
+      <div class="image-container"><img src="assets/profile.svg" alt="profile-icon"></div>
+      <div class="image-container"><img src="assets/bag.svg" alt="bag-icon"><span id="items"></span></div>
+    </div>
+  </header>
+  <main>
+    <div id="product-info">
+      <div id="product-info-top">
+        <div id="path">
+          <img id="left-arrow" src="assets/leftArrow.svg" alt="left arrow">
+          <div id="location"></div>
+        </div>
+        <div id="product-image"><img src="assets/product.png" alt="product image" width="100%" height="100%"></div>
+        <div id="product-intro">
+          <h3>RESTORATIVE HAIR MASK</h3>
+          <h4>nourishment in a bottle</h4>
+          <hr />
+          <div id="product-intro-main">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+            </p>
+            <div id="product-icons-container">
+              <div class="product-icons"><img src="assets/desc.png" alt="description image"><span>100% ORGANIC</span>
+              </div>
+              <div class="product-icons"><img src="assets/desc.png" alt="description image"><span>100% ORGANIC</span>
+              </div>
+              <div class="product-icons"><img src="assets/desc.png" alt="description image"><span>100% ORGANIC</span>
+              </div>
+              <div class="product-icons"><img src="assets/desc.png" alt="description image"><span>100% ORGANIC</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <form id="buying-details">
+            <div id="buying-options">
+              <label class="buying-labels">
+                <input type="radio" class="radio" id="buying-option-1" name="buying-option" value="once" checked />
+                Buy Once | $38
+              </label>
+              <label class="buying-labels unselected">
+                <input type="radio" class="radio" id="buying-option-2" name="buying-option" value="subscribe" />
+                Subscribe (SAVE 20%) | <span class="redded">&nbsp$30</span>
+              </label>
+            </div>
+            <div id="quantity">
+              <div id="quantity-container">
+                <div class="change-quantity" id="minus">-</div>
+                <input id="quantity-input" type="text" maxlength="3" name="quantity" value="1" />
+                <div class="change-quantity" id="plus">+</div>
+              </div>
+              <button id="add" type="submit">Add to cart</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="product-info-bottom">
+        <div class="ingredients expanded">
+          <h3>Ingredients</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+          </p>
+          <button class="expand">-</button>
+        </div>
+        <hr />
+        <div class="ingredients">
+          <h3>Ingredients</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+          </p>
+          <button class="expand">+</button>
+        </div>
+        <hr />
+        <div class="ingredients">
+          <h3>Ingredients</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+          </p>
+          <button class="expand">+</button>
+        </div>
+      </div>
+    </div>
+    <div id="suggestions">
+      <h3>You may also like</h3>
+      <div id="carousel-viewport">
+        <div id="products-carousel">
+          <div class="suggestion">
+            <img alt="product image" src="assets/slider.png" />
+            <h4>HAND POMADE / POMMADE MAINS</h4>
+            <p class="suggestion-description">NOURISHMENT FOR YOUR HANDS</p>
+            <p class="price">159,00 KR</p>
+          </div>
+          <div class="suggestion">
+            <img alt="product image" src="assets/slider.png" />
+            <h4>HAND POMADE / POMMADE MAINS</h4>
+            <p class="suggestion-description">NOURISHMENT FOR YOUR HANDS</p>
+            <p class="price">159,00 KR</p>
+          </div>
+          <div class="suggestion">
+            <img alt="product image" src="assets/slider.png" />
+            <h4>HAND POMADE / POMMADE MAINS</h4>
+            <p class="suggestion-description">NOURISHMENT FOR YOUR HANDS</p>
+            <p class="price">159,00 KR</p>
+          </div>
+          <div class="suggestion">
+            <img alt="product image" src="assets/slider.png" />
+            <h4>HAND POMADE / POMMADE MAINS</h4>
+            <p class="suggestion-description">NOURISHMENT FOR YOUR HANDS</p>
+            <p class="price">159,00 KR</p>
+          </div>
+          <div class="suggestion">
+            <img alt="product image" src="assets/slider.png" />
+            <h4>HAND POMADE / POMMADE MAINS</h4>
+            <p class="suggestion-description">NOURISHMENT FOR YOUR HANDS</p>
+            <p class="price">159,00 KR</p>
+          </div>
+          <div class="suggestion">
+            <img alt="product image" src="assets/slider.png" />
+            <h4>HAND POMADE / POMMADE MAINS</h4>
+            <p class="suggestion-description">NOURISHMENT FOR YOUR HANDS</p>
+            <p class="price">159,00 KR</p>
+          </div>
+        </div>
+        <div class="slide-icon" id="slide-left"><img id="wrong-svg" src="assets/slide-right.svg" alt="slide left">
+        </div>
+        <div class="slide-icon" id="slide-right"><img src="assets/slide-right.svg" alt="slide right"></div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
